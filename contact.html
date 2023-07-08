@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/aboutr.jpg">
+</head>
+<style>
+    html {
+        font-size: 10px;
+    }
+    h1 {
+        color: black;
+        font-size: 5rem;
+        letter-spacing: 2px;
+    }
+
+    h1+p {
+        font-weight: bold;
+        color: black;
+    }
+    p {
+        font-size: 1.5rem;
+        font-family: sans-serif;
+        line-height: 1.6;
+        letter-spacing: 1px;
+    }
+    .contact_container{
+  row-gap: 1rem;
+}
+
+.contact_information{
+  display: flex;
+  margin-bottom: var(--mb-2);
+}
+
+.contact_icon{
+  font-size: 2rem;
+  color: var(--first-color);
+  margin-right: var(--mb-0-75);
+
+}
+
+.contact_title{
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+}
+.contact_subtitle{
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+
+.contact_content{
+  background-color: var(--input-color);
+  border-radius: .5rem;
+  padding: .75rem 1rem .25rem;
+}
+
+.contact_label{
+  font-size: var(--smaller-font-size);
+  color: var(--title-color);
+}
+
+.contact_input{
+  width: 100%;
+  background-color: var(--input-color);
+  color: var(--text-color);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  border: none;
+  outline: none;
+  padding: .25rem .5rem .5rem 0;
+}
+</style>
+<body>
+    
+        <div class="contact_container container grid">
+            <div>
+                <div class="contact_information">
+                    <i class="uil uil-phone contact_icon"></i>
+
+                    <div>
+                        <h3 class="contact_title">Call Me</h3>
+                        <span class="contact_subtitle"> <a href="tel:+917415583408" style="color: var(--text-color-light);">7415583408</a></span>
+                    </div>
+                </div>
+
+                <div class="contact_information">
+                    <i class="uil uil-envelope contact_icon"></i>
+
+                    <div>
+                        <h3 class="contact_title">Email</h3>
+                        <span class="contact_subtitle" ><a href="mailto:rahulkushwah7477@gmail.com" style="color: var(--text-color-light);" >rahulkushwah7477@gmail.com
+                        </a></span>
+                    </div>
+                </div>
+
+                <div class="contact_information">
+                    <i class="uil uil-map-marker contact_icon"></i>
+
+                    <div>
+                        <h3 class="contact_title">Location</h3>
+                        <span class="contact_subtitle"> Vit Chennai</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <form action="" class="contact_form grid">
+                <div class="contact_inputs grid">
+                    <div class="contact_content">
+                        <label for="name" class="contact_label">Name:
+                            <input type="text" class="contact_input" name="name" id="name" />
+                        </label>
+                    </div>
+
+                    <div class="contact_content">
+                        <label for="email" class="contact_label">Email:
+                            <input type="email"  class="contact_input" name="email" id="email" />
+                        </label>
+                    </div>
+
+                    <div class="contact_content">
+                        <label for="project" class="contact_label">Project:
+                            <input type="text" class="contact_input" name="project" id="project" />
+                        </label>
+                    </div>
+
+                    <div class="contact_content">
+                        <label for="project" class="contact_label">Message:
+                        </label>
+                        <textarea name="" id="" cols="0" rows="7" class="contact_input"></textarea>
+                    </div>
+                    <div>
+                        <a href="#" class="button button--flex">
+                            Send Message
+                            <i class="uil uil-message button_icon"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+</body>
+</html>
