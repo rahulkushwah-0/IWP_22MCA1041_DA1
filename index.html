@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="icon" type="image/x-icon" href="assets/img/aboutr.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+<style>
+    .sidebar {
+        width: 200px;
+        background-color: #ead8d8;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+    }
+    .sidebar a {
+        display: block;
+        color: black;
+        padding: 16px;
+        text-decoration: none;
+    }
+
+    .sidebar a:hover {
+        background-color: rgb(136, 136, 176);
+        color: white;
+    }
+    div.content {
+        
+        margin-left: 200px;
+        padding: 1px 16px;
+        height: 700px;
+    }
+
+    .header {
+        position: fixed;
+        top:0;
+        left:0;
+        width: 100%;
+        padding: 1.2rem 9%;
+        background-color: rgb(66, 66, 111);
+        display: flex;
+        z-index:50 ;
+    }
+
+    .logo {
+        font-size: 2.2rem;
+        color: white;
+        font-weight: 400;
+        cursor: default;
+    }
+
+    #main {
+        margin-top: 85px;
+    }
+   .content{
+    opacity: 0.9;
+   }
+   .header a{
+    text-decoration: none;
+   }
+  
+</style>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Rahul Kushwah </a>
+        <span style="color: white;">Digital Assignment-1</span>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        
+
+    </header>
+    <div id="main">
+        <div class="sidebar">
+            <a class="active" href="./About.html" target="iframe1"></i> About Self</a>
+            <a href="./me.jpeg"  target="iframe1">Selfie</a>
+            <a href="./skill.html" target="iframe1"> Skillsets</a>
+            <a href="./achieve.html" target="iframe1">Achievements</a>
+            <a href="./contact.html" target="iframe1"> Contact Details</a>
+        </div>
+        <div class="content">
+            <iframe name="iframe1" id="about" width="1290px" height="800px;">
+
+            </iframe>
+        </div>
+    </div>
+</body>
+
+</html>
